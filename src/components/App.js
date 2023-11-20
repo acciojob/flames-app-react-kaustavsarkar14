@@ -40,8 +40,8 @@ const App = () => {
         <div id="main">
             {/* Do not remove the main div */}
             <form action="" onSubmit={e => checkStatus(e)}>
-                <input data-testid="input1" type="text" value={name1} onChange={e => setName1(e.target.value)} placeholder="Enter first name" />
-                <input data-testid="input2" type="text" value={name2} onChange={e => setName2(e.target.value)} placeholder="Enter last name" />
+                <input name="name1" data-testid="input1" type="text" value={name1} onChange={e => setName1(e.target.value)} placeholder="Enter first name" />
+                <input name="name2" data-testid="input2" type="text" value={name2} onChange={e => setName2(e.target.value)} placeholder="Enter last name" />
                 <button data-testid="calculate_relationship" type="submit" >Calculate Relationship Future</button>
                 <button data-testid="clear" type="button" onClick={clearNames} >Clear</button>
             </form>
