@@ -29,7 +29,7 @@ const App = () => {
             setRelation('Please Enter valid input')
             return
         }
-        calculateRelation(name1.toLowerCase(), name2.toLowerCase())
+        calculateRelation(name1, name2)
     }
     const clearNames = () => {
         setName1('')
